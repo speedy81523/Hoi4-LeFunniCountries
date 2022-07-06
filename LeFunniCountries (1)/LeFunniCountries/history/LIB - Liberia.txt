@@ -14,7 +14,7 @@ set_convoys = 10
 
 
 recruit_character = LIB_edwin_barclay
-recruit_character = LIB_tribal_leader
+recruit_character = LIB_god_emperor
 recruit_character = LIB_harvey_firestone #harvey s. firestone jr.
 recruit_character = LIB_edgar_cailloux
 recruit_character = LIB_andre_fields
