@@ -6,7 +6,10 @@ oob = "LIB_1936"
 set_technology = {
 	infantry_weapons = 1
       early_fighters = 1
+      gw_artillery = 1
       early_destroyer = 1
+      basic_train = 1
+      
 }
 
 set_convoys = 10
@@ -16,7 +19,7 @@ set_convoys = 10
 recruit_character = LIB_edwin_barclay
 recruit_character = LIB_god_emperor
 recruit_character = LIB_harvey_firestone #harvey s. firestone jr.
-recruit_character = LIB_edgar_cailloux
+recruit_character = LIB_Sigfield_wikings
 recruit_character = LIB_andre_fields
 recruit_character = LIB_james_brooks
 recruit_character = LIB_won_loy_chan
