@@ -43,7 +43,8 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 100
+	democratic = 75
+	non-aligned = 25
 }
 
 
