@@ -1,1 +1,220 @@
+focus_tree = {
+	id = liberia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+		   add = 10
+		   tag = LIB
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	
+	focus = {
+		id = i_hate_the_government
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 1
+        cost = 2
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
 
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = LIB_profit
+		icon = GFX_focus_mex_privatisation
+		x = -3
+		y = 1
+        cost = 2
+		relative_position_id = i_hate_the_government
+		prerequisite = { focus = i_hate_the_government }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = use_the_bond
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 2
+		y = 2
+        cost = 2
+		relative_position_id = LIB_profit
+		prerequisite = { focus = LIB_profit }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = promise_to_the_workers
+		icon = GFX_focus_generic_treaty
+		x = -2
+		y = 2
+        cost = 2
+		relative_position_id = LIB_profit
+		prerequisite = { focus = LIB_profit }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = coup_barclay
+		icon = GFX_goal_generic_demand_territory
+		x = 2
+		y = 2
+        cost = 2
+		relative_position_id = promise_to_the_workers
+		prerequisite = { focus = promise_to_the_workers }
+		prerequisite = { focus = use_the_bond }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = we_love_america
+		icon = GFX_goal_support_democracy
+		x = 5
+		y = 1
+        cost = 2
+		relative_position_id = coup_barclay
+		prerequisite = { focus = coup_barclay }
+		prerequisite = { focus = use_the_bond }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = copy_the_american_military_doctrine
+		icon = GFX_goal_generic_army_tanks #cool sherman as the icon
+		x = 0
+		y = 2
+        cost = 2
+		relative_position_id = we_love_america
+		prerequisite = { focus = we_love_america }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = america_smart
+		icon = GFX_focus_research 
+		x = 2
+		y = 2
+        cost = 2
+		relative_position_id = we_love_america
+		prerequisite = { focus = we_love_america }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = attract_american_investors
+		icon = GFX_focus_generic_the_giant_wakes
+		x = -2
+		y = 2
+        cost = 2
+		relative_position_id = we_love_america
+		prerequisite = { focus = we_love_america }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = one_ring_to_rule_them_all
+		icon = GFX_goal_tripartite_pact
+		x = 0
+		y = 1
+        cost = 2
+		relative_position_id = copy_the_american_military_doctrine
+		prerequisite = { focus = copy_the_american_military_doctrine }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+
+    continuous_focus_position = {x = 50 y = 1000}
+
+}
