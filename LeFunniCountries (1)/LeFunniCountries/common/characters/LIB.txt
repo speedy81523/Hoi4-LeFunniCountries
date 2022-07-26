@@ -58,7 +58,7 @@ characters={
 				has_completed_focus = LIB_profit
 			}
 			traits = {
-				traditionalist_theorist
+				corporatist_minister
 			}
 		}
 	}
