@@ -38,4 +38,28 @@ characters={
 			id=-1
 		}
 	}
+	LIB_allen_yancy = {
+		name = LIB_allen_yancy
+		portraits = {
+			army = {
+				small = gfx\interface\ideas\allen_yancy.dds
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = LIB_allen_yancy
+			allowed = {
+				original_tag = LIB
+			}
+			
+			
+			available = {
+				has_completed_focus = LIB_profit
+			}
+			traits = {
+				traditionalist_theorist
+			}
+		}
+	}
 }
