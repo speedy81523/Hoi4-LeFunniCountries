@@ -1,4 +1,4 @@
-capital = 298
+﻿capital = 298
 
 oob = "LIB_1936"
 
@@ -18,6 +18,7 @@ set_convoys = 10
 recruit_character = LIB_edwin_barclay
 recruit_character = LIB_harvey_firestone #harvey s. firestone jr.
 recruit_character = LIB_tribal_leader
+recruit_character = LIB_allen_yancy
 #recruit_character = LIB_andre_fields
 #recruit_character = LIB_james_brooks
 #recruit_character = LIB_won_loy_chan
@@ -44,7 +45,6 @@ set_popularities = {
 	democratic = 75
 	neutrality = 25
 }
-
 
 
 

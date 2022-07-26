@@ -1,4 +1,4 @@
-focus_tree = {
+﻿focus_tree = {
 	id = liberia_focus
 	
 	country = {
@@ -46,7 +46,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			add_ideas = LIB_firestone_rising_popularity
 		}
 		ai_will_do = {
 		   factor = 1
@@ -102,12 +102,29 @@ focus_tree = {
 		prerequisite = { focus = promise_to_the_workers }
 		prerequisite = { focus = use_the_bond }
 		
+		available = {
+			neutrality > 0.5
+		}
+		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			hidden_effect = {
+			news_event = { id = news.600 days = 1 }
+			}
+			set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+			}
+			add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+			}
+			remove_ideas = {
+				LIB_firestone_rising_popularity
+			}
 		}
 		ai_will_do = {
 		   factor = 1

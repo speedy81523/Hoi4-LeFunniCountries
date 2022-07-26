@@ -1,8 +1,8 @@
 version="1.11"
 tags={
-	"Alternative History"
-	"National Focuses"
-	"Events"
+	"Map"
+	"Military"
 }
-name="Hoi4: Le Funni Countries"
+name="1644"
 supported_version="1.11.12"
+remote_file_id="2828195003"
