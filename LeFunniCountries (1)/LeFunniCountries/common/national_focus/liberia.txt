@@ -219,6 +219,8 @@
         cost = 2
 		relative_position_id = copy_the_american_military_doctrine
 		prerequisite = { focus = copy_the_american_military_doctrine }
+		prerequisite = { focus = attract_american_investors }
+		prerequisite = { focus = america_smart }
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
