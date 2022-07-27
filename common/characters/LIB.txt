@@ -1,0 +1,65 @@
+characters={
+	LIB_edwin_barclay={
+		name=LIB_edwin_barclay
+		portraits={
+			civilian={
+				large=gfx\leaders\LIB\Portrait_LIB_edwin_barclay.dds
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LIB_tribal_leader={
+		name=LIB_tribal_leader
+		portraits={
+			civilian={
+				large=gfx\leaders\LIB\triballeader.dds
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LIB_harvey_firestone={
+		name=LIB_harvey_firestone
+		portraits={
+			civilian={
+				large=gfx\leaders\LIB\firestone.dds
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LIB_allen_yancy = {
+		name = LIB_allen_yancy
+		portraits = {
+			army = {
+				small = gfx\interface\ideas\allen_yancy.dds
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = LIB_allen_yancy
+			allowed = {
+				original_tag = LIB
+			}
+			
+			
+			available = {
+				has_completed_focus = LIB_profit
+			}
+			traits = {
+				corporatist_minister
+			}
+		}
+	}
+}

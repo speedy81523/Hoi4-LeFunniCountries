@@ -1,0 +1,118 @@
+LIB_border_conflicts = {
+	LIB_sierra_leone_conflict = {
+		cost = 15
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+			state = 700
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+			attacker = {
+				state = 298
+				num_provinces = 2
+				on_win = liberia.2
+				on_lose = liberia.3
+				}
+				
+			defender = {
+				state = 700
+				num_provinces = 2
+				}
+			}
+		}
+	}
+	LIB_ivory_coast_conflict = {
+		cost = 15
+		fire_only_once = yes
+		highlight_states = {
+			highlight_state_targets = {
+			state = 779
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+			attacker = {
+				state = 298
+				num_provinces = 2
+				on_win = liberia.4
+				on_lose = liberia.5
+				}
+				
+			defender = {
+				state = 779
+				num_provinces = 2
+				}
+			}
+		}
+	}
+	LIB_guinea_conflict = {
+		cost = 15
+		fire_only_once = yes
+		available = {
+			controls_state = 700
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+			state = 780
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+			attacker = {
+				state = 700
+				num_provinces = 2
+				on_win = liberia.6
+				on_lose = liberia.7
+				}
+				
+			defender = {
+				state = 780
+				num_provinces = 2
+				}
+			}
+		}
+	}
+	LIB_portuguese_guinea_conflict = {
+		cost = 15
+		fire_only_once = yes
+		available = {
+			controls_state = 780
+		}
+		
+		highlight_states = {
+			highlight_state_targets = {
+			state = 296
+			}
+			highlight_color_while_active = 2
+			highlight_color_before_active = 2
+		}
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+			attacker = {
+				state = 780
+				num_provinces = 2
+				on_win = liberia.8
+				on_lose = liberia.9
+				}
+				
+			defender = {
+				state = 296
+				num_provinces = 2
+				}
+			}
+		}
+	}
+}

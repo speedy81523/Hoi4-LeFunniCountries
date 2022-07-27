@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	SpriteType = {
+	name = "GFX_idea_firestone_on_fire"
+	texturefile = "gfx/interface/ideas/firestone_on_fire.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_allen_yancy"
+	texturefile = "gfx/interface/ideas/allen_yancy.dds"			
+	}
+
+}
