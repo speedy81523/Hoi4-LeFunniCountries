@@ -47,6 +47,7 @@
 
 		completion_reward = {
 			add_ideas = LIB_firestone_rising_popularity
+			custom_effect_tooltip = 2_LIB_tt
 		}
 		ai_will_do = {
 		   factor = 1
