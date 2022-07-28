@@ -1,0 +1,16 @@
+ideas = {
+
+	country = {
+		war_with_liberia = {
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				ai_call_ally_desire_factor = -200
+			}
+		}
+	
+	}
+}

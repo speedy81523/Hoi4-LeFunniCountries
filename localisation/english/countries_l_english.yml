@@ -1,4 +1,7 @@
 ﻿l_english:
+ LIB_firestone:0 "Empire of Firestone"
+ LIB_firestone_DEF:0 "the Empire of Firestone"
+ LIB_firestone_ADJ:0 "African"
  GER_fascism:0 "German Reich"
  GER_fascism_DEF:0 "the German Reich"
  GER_democratic:0 "German Republic"

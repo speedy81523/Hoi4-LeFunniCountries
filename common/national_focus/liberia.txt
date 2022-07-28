@@ -326,6 +326,12 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect = {
+				FRA = {
+					add_ideas = war_with_liberia
+				}
+			}
+			create_wargoal = { type = annex_everything target = FRA }
 			capital_scope = {
 				create_unit = {
 
@@ -383,7 +389,12 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			hidden_effect = {
+				BEL = {
+					add_ideas = war_with_liberia
+				}
+			}
+			create_wargoal = { type = annex_everything target = BEL }
 		}
 		ai_will_do = {
 		   factor = 1
@@ -404,6 +415,12 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect = {
+				ENG = {
+					add_ideas = war_with_liberia
+				}
+			}
+			create_wargoal = { type = annex_everything target = ENG }
 			capital_scope = {
 				create_unit = {
 
@@ -462,7 +479,12 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			create_wargoal = { type = annex_everything target = ITA }
+			hidden_effect = {
+				ITA = {
+					add_ideas = war_with_liberia
+				}
+			}
 		}
 		ai_will_do = {
 		   factor = 1
@@ -483,6 +505,18 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect = {
+				SPR = {
+					add_ideas = war_with_liberia
+				}
+			}
+			hidden_effect = {
+				SPA = {
+					add_ideas = war_with_liberia
+				}
+			}
+			create_wargoal = { type = annex_everything target = SPR }
+			create_wargoal = { type = annex_everything target = SPA }
 			capital_scope = {
 				create_unit = {
 
@@ -541,7 +575,12 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			hidden_effect = {
+				POR = {
+					add_ideas = war_with_liberia
+				}
+			}
+			create_wargoal = { type = annex_everything target = POR }
 		}
 		ai_will_do = {
 		   factor = 1
@@ -563,7 +602,12 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			hidden_effect = {
+				SAF = {
+					add_ideas = war_with_liberia
+				}
+			}
+			create_wargoal = { type = annex_everything target = SAF }
 		}
 		ai_will_do = {
 		   factor = 1
@@ -673,7 +717,8 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			add_stability = 0.1
+			add_political_power = 300
 		}
 		ai_will_do = {
 		   factor = 1
@@ -694,7 +739,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			set_cosmetic_tag = LIB_firestone
 		}
 		ai_will_do = {
 		   factor = 1
