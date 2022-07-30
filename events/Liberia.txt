@@ -247,6 +247,9 @@ country_event = { #uk conditional surrender event
 	option = {
 		name = liberia.10.a
 		white_peace = ENG
+		ENG = {
+			remove_ideas = war_with_liberia
+		}
 		LIB = {
 			transfer_state = 274
 			add_state_core = 274
@@ -343,6 +346,9 @@ country_event = { #france conditional surrender event
 	option = {
 		name = liberia.11.a
 		white_peace = FRA
+		FRA = {
+			remove_ideas = war_with_liberia
+		}
 		LIB = {
 			transfer_state = 272
 			add_state_core = 272
@@ -435,6 +441,12 @@ country_event = { #spanish conditional surrender event
 		name = liberia.12.a
 		white_peace = SPA
 		white_peace = SPR
+		SPA = {
+			remove_ideas = war_with_liberia
+		}
+		SPR = {
+			remove_ideas = war_with_liberia
+		}
 		LIB = {
 			transfer_state = 699
 			add_state_core = 699
@@ -482,6 +494,9 @@ country_event = { #italian conditional surrender event
 	option = {
 		name = liberia.13.a
 		white_peace = ITA
+		ITA = {
+			remove_ideas = war_with_liberia
+		}
 		LIB = {
 			transfer_state = 550
 			add_state_core = 550
@@ -539,6 +554,9 @@ country_event = { #belgian conditional surrender event
 	option = {
 		name = liberia.14.a
 		white_peace = BEL
+		BEL = {
+			remove_ideas = war_with_liberia
+		}
 		LIB = {
 			transfer_state = 295
 			add_state_core = 295
@@ -582,6 +600,9 @@ country_event = { #portuguese conditional surrender event
 	option = {
 		name = liberia.15.a
 		white_peace = POR
+		POR = {
+			remove_ideas = war_with_liberia
+		}
 		LIB = {
 			transfer_state = 796
 			add_state_core = 796
@@ -622,6 +643,9 @@ country_event = { #south african conditional surrender event
 	option = {
 		name = liberia.16.a
 		white_peace = SAF
+		SAF = {
+			remove_ideas = war_with_liberia
+		}
 		LIB = {
 			transfer_state = 681
 			add_state_core = 681

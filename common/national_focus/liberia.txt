@@ -15,11 +15,160 @@
 	
 	
 	focus = {
+		id = stabilize_the_internal_situation
+		icon = GFX_goal_generic_neutrality_focus
+		x = -12
+		y = 1
+        cost = 2
+		mutually_exclusive = {
+			focus = i_hate_the_government	
+		}	
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = league_of_nations_sponsored_loan_payments
+		icon = GFX_focus_league_of_nations_economic
+		x = -3
+		y = 1
+        cost = 2
+		relative_position_id = stabilize_the_internal_situation
+		prerequisite = { focus = stabilize_the_internal_situation }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = normalize_relations_with_france
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 0
+		y = 1
+        cost = 2
+		relative_position_id = league_of_nations_sponsored_loan_payments
+		prerequisite = { focus = league_of_nations_sponsored_loan_payments }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	focus = {
+		id = cave_into_the_american_demands
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 0
+		y = 1
+        cost = 2
+		relative_position_id = stabilize_the_internal_situation
+		prerequisite = { focus = stabilize_the_internal_situation }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	focus = {
+		id = kick_out_the_german_investors
+		icon = GFX_focus_crush_the_germans
+		x = 0
+		y = 1
+        cost = 2
+		relative_position_id = cave_into_the_american_demands
+		prerequisite = { focus = cave_into_the_american_demands }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	focus = {
+		id = uphold_the_anti_native_segregation
+		icon = GFX_focus_CZE_german_puppet
+		x = 3
+		y = 1
+        cost = 2
+		relative_position_id = stabilize_the_internal_situation
+		prerequisite = { focus = stabilize_the_internal_situation }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	focus = {
+		id = attract_afro_caribbean_immigrants
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+        cost = 2
+		relative_position_id = uphold_the_anti_native_segregation
+		prerequisite = { focus = uphold_the_anti_native_segregation }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	
+	focus = {
 		id = i_hate_the_government
 		icon = GFX_goal_generic_political_pressure
 		x = 12
 		y = 1
         cost = 2
+		mutually_exclusive = {
+			focus = stabilize_the_internal_situation	
+		}	
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -29,7 +178,7 @@
 		country_event = liberia.1 #i hate the government event
 		}
 		ai_will_do = {
-		   factor = 1
+		   factor = 0
 		}
 	}
 	focus = {

@@ -1,4 +1,14 @@
 spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_focus_crush_the_germans"
+	texturefile = "gfx/interface/goals/crush_the_germans.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_league_of_nations_economic"
+	texturefile = "gfx/interface/goals/league_of_nations_economic.dds"			
+	}
 	
 	SpriteType = {
 	name = "GFX_focus_liberia_domination"
