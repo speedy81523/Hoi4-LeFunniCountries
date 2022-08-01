@@ -38,7 +38,7 @@
 	focus = {
 		id = league_of_nations_sponsored_loan_payments
 		icon = GFX_focus_league_of_nations_economic
-		x = -3
+		x = -2
 		y = 1
         cost = 2
 		relative_position_id = stabilize_the_internal_situation
@@ -79,7 +79,7 @@
 	focus = {
 		id = cave_into_the_american_demands
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 0
+		x = 2
 		y = 1
         cost = 2
 		relative_position_id = stabilize_the_internal_situation
@@ -119,9 +119,144 @@
 	}
 	
 	focus = {
+		id = our_closest_ally
+		icon = GFX_focus_chi_mission_to_the_us
+		x = -2
+		y = 1
+        cost = 2
+		relative_position_id = kick_out_the_german_investors
+		prerequisite = { focus = kick_out_the_german_investors }
+		prerequisite = { focus = normalize_relations_with_france }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	focus = {
+		id = total_opposition_to_fascism
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 0
+		y = 2
+        cost = 2
+		relative_position_id = kick_out_the_german_investors
+		prerequisite = { focus = kick_out_the_german_investors }
+		mutually_exclusive = {
+			focus = diplomatically_protest_fascism
+		}	
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 0
+		}
+	}
+	focus = {
+		id = direct_intervention
+		icon = GFX_focus_generic_manpower
+		x = 0
+		y = 1
+        cost = 2
+		relative_position_id = total_opposition_to_fascism
+		prerequisite = { focus = total_opposition_to_fascism }
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	focus = {
+		id = diplomatically_protest_fascism
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 0
+		y = 2
+        cost = 2
+		relative_position_id = normalize_relations_with_france
+		prerequisite = { focus = normalize_relations_with_france }
+		mutually_exclusive = {
+			focus = total_opposition_to_fascism
+		}	
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	focus = {
+		id = defense_pact_with_the_americans
+		icon = GFX_goal_generic_major_alliance
+		x = 0
+		y = 1
+        cost = 2
+		relative_position_id = diplomatically_protest_fascism
+		prerequisite = { focus = diplomatically_protest_fascism }
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	focus = {
+		id = rubber_to_the_allies
+		icon = GFX_focus_generic_rubber
+		x = 2
+		y = 2
+        cost = 2
+		relative_position_id = defense_pact_with_the_americans
+		prerequisite = { focus = defense_pact_with_the_americans
+		focus = direct_intervention }
+		
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+		ai_will_do = {
+		   factor = 1
+		}
+	}
+	
+	focus = {
 		id = uphold_the_anti_native_segregation
 		icon = GFX_focus_CZE_german_puppet
-		x = 3
+		x = 6
 		y = 1
         cost = 2
 		relative_position_id = stabilize_the_internal_situation
