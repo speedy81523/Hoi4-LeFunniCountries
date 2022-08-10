@@ -95,6 +95,20 @@ ideas = {
 				conscription_factor = 0.15
 			}
 		}
+		LIB_intervene_in_europe = {
+
+			picture = ast_volunteer_defence_corps
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.9
+			}
+		}
 	
 	}
 }
