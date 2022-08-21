@@ -1,0 +1,143 @@
+ideas = {
+
+	country = {
+		LIB_firestone_rising_popularity = {
+
+			picture = firestone_on_fire
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+				neutrality_drift = 0.05
+				political_power_cost = 0.15
+				stability_weekly_factor = -0.05
+			}
+		}
+		LIB_corporate_exploitation = {
+
+			picture = MEX_callistas
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription_factor = -0.15
+				production_speed_buildings_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				
+				
+			}
+		}
+		LIB_corporate_exploitation_2 = {
+
+			picture = MEX_callistas
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription_factor = -0.15
+				production_speed_buildings_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+				
+				
+			}
+		}
+		LIB_corporate_exploitation_3 = {
+
+			picture = MEX_callistas
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription_factor = -0.15
+				production_speed_buildings_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				
+				
+			}
+		}
+		LIB_tools_to_guns = {
+
+			picture = ast_volunteer_defence_corps
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+				war_support_factor = 0.15
+				conscription_factor = 0.15
+			}
+		}
+		LIB_repaying_our_debt = {
+
+			picture = generic_foreign_capital
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		LIB_intervene_in_europe = {
+
+			picture = ast_volunteer_defence_corps
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.9
+			}
+		}	
+		LIB_one_ring_to_rule_them_all = {
+
+			picture = the_ring
+			
+			removal_cost = -1
+
+			allowed = {
+				tag = LIB
+			}
+			
+			modifier = {
+                army_attack_factor = 0.5
+                army_speed_factor = 0.1
+                research_speed_factor = 0.3
+			}
+		}	
+	}
+}

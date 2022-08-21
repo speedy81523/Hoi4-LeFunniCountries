@@ -1,0 +1,674 @@
+﻿###########################
+# liberia events	:D	  #
+###########################
+
+add_namespace = liberia
+
+
+country_event = {
+	id = liberia.1
+	title = liberia.1.t
+	desc = liberia.1.d
+	picture = GFX_report_event_american_hunger_march
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.1.a
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = liberia.2
+	title = liberia.2.t
+	desc = liberia.2.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.2.a
+			LIB = {
+			transfer_state = 700
+			add_state_core = 700
+		}
+	}
+}
+	
+country_event = {
+	id = liberia.3
+	title = liberia.3.t
+	desc = liberia.3.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.3.a
+	}
+}
+	
+country_event = {
+	id = liberia.4
+	title = liberia.4.t
+	desc = liberia.4.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.4.a
+		LIB = {
+		transfer_state = 779
+		add_state_core = 779
+		}
+	}
+}
+country_event = {
+	id = liberia.5
+	title = liberia.5.t
+	desc = liberia.5.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.5.a
+	}
+}
+country_event = {
+	id = liberia.7
+	title = liberia.7.t
+	desc = liberia.7.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.7.a
+	}
+}
+country_event = {
+	id = liberia.9
+	title = liberia.9.t
+	desc = liberia.9.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.9.a
+	}
+}
+country_event = {
+	id = liberia.6
+	title = liberia.6.t
+	desc = liberia.6.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.6.a
+		LIB = {
+			transfer_state = 780
+			add_state_core = 780
+		}
+	}
+}
+country_event = {
+	id = liberia.8
+	title = liberia.8.t
+	desc = liberia.8.d
+	picture = GFX_report_event_african_soldiers
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.8.a
+		LIB = {
+			transfer_state = 296
+			add_state_core = 296
+		}
+	}
+}
+country_event = { #uk conditional surrender event
+	id = liberia.10
+	title = liberia.10.t
+	desc = liberia.10.d
+	picture = GFX_report_event_american_hunger_march
+	trigger = {
+		tag = LIB
+		has_war_with = ENG
+		controls_state = 274
+		controls_state = 558
+		controls_state = 701
+		controls_state = 542
+		controls_state = 545
+		controls_state = 771
+		controls_state = 770
+		controls_state = 546
+		controls_state = 547
+		controls_state = 548
+		controls_state = 549
+		controls_state = 551
+		controls_state = 767
+		controls_state = 552
+		controls_state = 456
+		controls_state = 457
+		controls_state = 446
+		controls_state = 447
+		controls_state = 452
+		controls_state = 453
+		controls_state = 269
+	}
+
+	fire_only_once = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.10.a
+		white_peace = ENG
+		ENG = {
+			remove_ideas = war_with_liberia
+		}
+		LIB = {
+			transfer_state = 700
+			add_state_core = 700
+			transfer_state = 274
+			add_state_core = 274
+			transfer_state = 558
+			add_state_core = 558
+			transfer_state = 701
+			add_state_core = 701
+			transfer_state = 542
+			add_state_core = 542
+			transfer_state = 545
+			add_state_core = 545
+			transfer_state = 771
+			add_state_core = 771
+			transfer_state = 770
+			add_state_core = 770
+			transfer_state = 546
+			add_state_core = 546
+			transfer_state = 547
+			add_state_core = 547
+			transfer_state = 548
+			add_state_core = 548
+			transfer_state = 549
+			add_state_core = 549
+			transfer_state = 551
+			add_state_core = 551
+			transfer_state = 767
+			add_state_core = 767
+			transfer_state = 552
+			add_state_core = 552
+			transfer_state = 456
+			add_state_core = 456
+			transfer_state = 457
+			add_state_core = 457
+			transfer_state = 446
+			add_state_core = 446
+			transfer_state = 447
+			add_state_core = 447
+			transfer_state = 452
+			add_state_core = 452
+			transfer_state = 453
+			add_state_core = 453
+			transfer_state = 269
+			add_state_core = 269
+		}
+	}
+	option = {
+		name = liberia.10.b
+	}
+}
+country_event = { #france conditional surrender event
+	id = liberia.11
+	title = liberia.11.t
+	desc = liberia.11.d
+	picture = GFX_report_event_african_soldiers
+	trigger = {
+		tag = LIB
+		has_war_with = FRA
+		controls_state = 272
+		controls_state = 556
+		controls_state = 778
+		controls_state = 781
+		controls_state = 777
+		controls_state = 776
+		controls_state = 515
+		controls_state = 775
+		controls_state = 774
+		controls_state = 773
+		controls_state = 660
+		controls_state = 539
+		controls_state = 772
+		controls_state = 782
+		controls_state = 557
+		controls_state = 786
+		controls_state = 514
+		controls_state = 462
+		controls_state = 461
+		controls_state = 513
+		controls_state = 459
+		controls_state = 460
+		controls_state = 458
+		controls_state = 665
+	}
+
+	fire_only_once = yes
+	
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.11.a
+		white_peace = FRA
+		FRA = {
+			remove_ideas = war_with_liberia
+		}
+		LIB = {
+			transfer_state = 780
+			add_state_core = 780
+			transfer_state = 779
+			add_state_core = 779
+			transfer_state = 272
+			add_state_core = 272
+			transfer_state = 556
+			add_state_core = 556
+			transfer_state = 778
+			add_state_core = 778
+			transfer_state = 781
+			add_state_core = 781
+			transfer_state = 777
+			add_state_core = 777
+			transfer_state = 776
+			add_state_core = 776
+			transfer_state = 515
+			add_state_core = 515
+			transfer_state = 775
+			add_state_core = 775
+			transfer_state = 774
+			add_state_core = 774
+			transfer_state = 773
+			add_state_core = 773
+			transfer_state = 660
+			add_state_core = 660
+			transfer_state = 539
+			add_state_core = 539
+			transfer_state = 772
+			add_state_core = 772
+			transfer_state = 782
+			add_state_core = 782
+			transfer_state = 557
+			add_state_core = 557
+			transfer_state = 786
+			add_state_core = 786
+			transfer_state = 514
+			add_state_core = 514
+			transfer_state = 462
+			add_state_core = 462
+			transfer_state = 461
+			add_state_core = 461
+			transfer_state = 513
+			add_state_core = 513
+			transfer_state = 459
+			add_state_core = 459
+			transfer_state = 460
+			add_state_core = 460
+			transfer_state = 458
+			add_state_core = 458
+			transfer_state = 665
+			add_state_core = 665
+			transfer_state = 268
+			add_state_core = 268
+			
+			
+			
+		}
+	}
+	option = {
+		name = liberia.11.b
+	}
+}
+country_event = { #spanish conditional surrender event
+	id = liberia.12
+	title = liberia.12.t
+	desc = liberia.12.d
+	picture = GFX_report_event_american_hunger_march
+	
+	trigger = {
+		tag = LIB
+		OR = { 
+			has_war_with = SPA
+			has_war_with = SPR
+		}
+		controls_state = 699
+		controls_state = 783
+		controls_state = 290
+		controls_state = 297
+	}
+
+	fire_only_once = yes
+	
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.12.a
+		white_peace = SPA
+		white_peace = SPR
+		SPA = {
+			remove_ideas = war_with_liberia
+		}
+		SPR = {
+			remove_ideas = war_with_liberia
+		}
+		LIB = {
+			transfer_state = 699
+			add_state_core = 699
+			transfer_state = 783
+			add_state_core = 783
+			transfer_state = 290
+			add_state_core = 290
+			transfer_state = 297
+			add_state_core = 297
+		}
+	}
+	option = {
+		name = liberia.12.b
+	}
+}
+country_event = { #italian conditional surrender event
+	id = liberia.13
+	title = liberia.13.t
+	desc = liberia.13.d
+	picture = GFX_report_event_american_hunger_march
+	
+	trigger = {
+		tag = LIB
+		has_war_with = ITA
+		controls_state = 550
+		controls_state = 559
+		controls_state = 273
+		controls_state = 661
+		controls_state = 448
+		controls_state = 449
+		controls_state = 662
+		controls_state = 663
+		controls_state = 450
+		controls_state = 451
+	}
+
+	fire_only_once = yes
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.13.a
+		white_peace = ITA
+		ITA = {
+			remove_ideas = war_with_liberia
+		}
+		LIB = {
+			transfer_state = 550
+			add_state_core = 550
+			transfer_state = 559
+			add_state_core = 559
+			transfer_state = 273
+			add_state_core = 273
+			transfer_state = 661
+			add_state_core = 661
+			transfer_state = 448
+			add_state_core = 448
+			transfer_state = 449
+			add_state_core = 449
+			transfer_state = 662
+			add_state_core = 662
+			transfer_state = 663
+			add_state_core = 663
+			transfer_state = 450
+			add_state_core = 450
+			transfer_state = 451
+			add_state_core = 451
+			transfer_state = 271
+			add_state_core = 271
+		}
+	}
+	option = {
+		name = liberia.13.b
+	}
+}
+country_event = { #belgian conditional surrender event
+	id = liberia.14
+	title = liberia.14.t
+	desc = liberia.14.d
+	picture = GFX_report_event_american_hunger_march
+	
+	trigger = {
+		tag = LIB
+		has_war_with = BEL
+		controls_state = 295
+		controls_state = 538
+		controls_state = 718
+		controls_state = 768
+		controls_state = 769
+	}
+
+	fire_only_once = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.14.a
+		white_peace = BEL
+		BEL = {
+			remove_ideas = war_with_liberia
+		}
+		LIB = {
+			transfer_state = 295
+			add_state_core = 295
+			transfer_state = 296
+			add_state_core = 296
+			transfer_state = 538
+			add_state_core = 538
+			transfer_state = 718
+			add_state_core = 718
+			transfer_state = 768
+			add_state_core = 768
+			transfer_state = 769
+			add_state_core = 769
+		}
+	}
+	option = {
+		name = liberia.14.b
+	}
+}
+country_event = { #portuguese conditional surrender event
+	id = liberia.15
+	title = liberia.15.t
+	desc = liberia.15.d
+	picture = GFX_report_event_american_hunger_march
+	
+	trigger = {
+		tag = LIB
+		has_war_with = POR
+		controls_state = 796
+		controls_state = 540
+		controls_state = 544
+	}
+
+	fire_only_once = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.15.a
+		white_peace = POR
+		POR = {
+			remove_ideas = war_with_liberia
+		}
+		LIB = {
+			transfer_state = 796
+			add_state_core = 796
+			transfer_state = 540
+			add_state_core = 540
+			transfer_state = 544
+			add_state_core = 544
+		}
+	}
+	option = {
+		name = liberia.15.b
+	}
+}
+country_event = { #south african conditional surrender event
+	id = liberia.16
+	title = liberia.16.t
+	desc = liberia.16.d
+	picture = GFX_report_event_american_hunger_march
+	
+	trigger = {
+		tag = LIB
+		has_war_with = SAF
+		controls_state = 681
+		controls_state = 719
+		controls_state = 275
+		controls_state = 541
+	}
+
+	fire_only_once = yes
+	
+	
+	
+	mean_time_to_happen = { days = 1 }
+	
+
+	
+	
+	option = {
+		name = liberia.16.a
+		white_peace = SAF
+		SAF = {
+			remove_ideas = war_with_liberia
+		}
+		LIB = {
+			transfer_state = 681
+			add_state_core = 681
+			transfer_state = 719
+			add_state_core = 719
+			transfer_state = 275
+			add_state_core = 275
+			transfer_state = 541
+			add_state_core = 541
+		}
+	}
+	option = {
+		name = liberia.15.b
+	}
+}
+	
+
+
